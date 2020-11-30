@@ -1,0 +1,38 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'ir.mstajbakhsh'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                artifactId 'nmap-android'
+                name 'NMAP Android'
+                description 'NMAP Android Library'
+                url 'https://github.com/mirsamantajbakhsh/NMAPAndroid'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'mirsamantajbakhsh'
+                        name 'Mir Saman Tajbakhsh'
+                        email 'saman@mstajbakhsh.ir'
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/mirsamantajbakhsh/NMAPAndroid.git'
+                    developerConnection 'https://github.com/mirsamantajbakhsh/NMAPAndroid.git'
+                    url 'https://mstajbakhsh.ir'
+                }
+            }
+        }
+    }
+}
